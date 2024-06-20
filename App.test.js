@@ -9,17 +9,17 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import { MemoryRouter, Route } from 'react-router-dom';
-import App from 'react-app/src/App.js';
-import Home from './home.js';
-import About from './about.js';
-import Products from './product.js';
- import Contact from './contact.js';
-import PreBook from './prebook.js';
-import Product1 from './product1.js';
-import Product2 from './product2.js';
-import Product3 from './product3.js';
-import CompareAll from './compareAll.js';
-import Rentals from './rentals.js';
+import App from 'react-app/src/App.jsx';
+import Home from './home.jsx';
+import About from './about.jsx';
+import Products from './product.jsx';
+ import Contact from './contact.jsx';
+import Prebook from './prebook.jsx';
+import Product1 from './product1.jsx';
+import Product2 from './product2.jsx';
+import Product3 from './product3.jsx';
+import CompareAll from './compareAll.jsx';
+import Rentals from './rentals.jsx';
 
 test('renders Home page on default route', () => {
   render(
@@ -58,7 +58,7 @@ test('renders Contact page on /contact route', () => {
   expect(screen.getByText(/Contact Us/i)).toBeInTheDocument();
 });
 
-test('renders PreBook page on /prebook route', () => {
+test('renders Prebook page on /prebook route', () => {
   render(
     <MemoryRouter initialEntries={['/prebook']}>
       <App />

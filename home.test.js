@@ -2,7 +2,7 @@
 // src/pages/Home.test.js
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import Home from './Home';
+import Home from './home.jsx';
 
 test('renders Home component with correct text', () => {
   render(<Home />);
